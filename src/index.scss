@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+ol,
+ul,
+li,
+table,
+tr,
+th,
+td,
+article,
+aside,
+menu,
+nav,
+section,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  list-style: none;
+}
+
+nav ul {
+  list-style: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background: #CCCCCC;
+  align-items: center;
+  padding: 16px 0;
+
+  h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+  }
+
+  .headerRight {
+    display: flex;
+
+    li {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+      margin-left: 32px;
+    }
+
+    li:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.content {
+  padding: 32px 0 776px;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 32px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 35px;
+  }
+}
+
+.sort {
+  &__label {
+    display: flex;
+    align-items: center;
+    width: 288px;
+    height: 38px;
+    border: 1px solid #C4C4C4;
+    border-radius: 20px;
+    padding: 10px 13px 9px 14px;
+  }
+
+  p {
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+  }
+
+  span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+  }
+
+  svg {
+    margin-left: 32px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 379px;
+  margin-bottom: 51px;
+
+  img {
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+    margin-bottom: 12px;
+  }
+
+  b {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #050505;
+
+  }
+}
